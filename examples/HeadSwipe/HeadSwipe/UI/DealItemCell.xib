@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MarketSans-SemiBold.otf">
+            <string>MarketSans-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DealItemCell" customModule="HeadSwipe" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="425"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="300" height="425"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mOl-BX-cYo">
+                        <rect key="frame" x="0.0" y="276.5" width="300" height="148.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Czn-54-xwJ">
+                                <rect key="frame" x="205" y="-4.5" width="95" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$99.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="32g-lC-uiA">
+                                        <rect key="frame" x="0.0" y="0.5" width="95" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="m3C-4R-4Bj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarketSans-SemiBold" family="Market Sans" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$199.00 | 50% OFF" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="zvz-CZ-jXs">
+                                        <rect key="frame" x="0.0" y="30.5" width="95" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="ZDZ-Wb-Eef"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="MarketSans-SemiBold" family="Market Sans" pointSize="10"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="32g-lC-uiA" firstAttribute="top" secondItem="Czn-54-xwJ" secondAttribute="top" id="8n2-60-DMn"/>
+                                    <constraint firstAttribute="height" constant="50" id="9A8-rl-8Eq"/>
+                                    <constraint firstAttribute="trailing" secondItem="32g-lC-uiA" secondAttribute="trailing" id="IfB-Os-kpq"/>
+                                    <constraint firstAttribute="bottom" secondItem="zvz-CZ-jXs" secondAttribute="bottom" id="O1e-cT-kw3"/>
+                                    <constraint firstItem="32g-lC-uiA" firstAttribute="leading" secondItem="Czn-54-xwJ" secondAttribute="leading" id="S4E-pr-eKq"/>
+                                    <constraint firstItem="zvz-CZ-jXs" firstAttribute="leading" secondItem="Czn-54-xwJ" secondAttribute="leading" id="T55-0K-xAZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="zvz-CZ-jXs" secondAttribute="trailing" id="gGY-bi-p8e"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luq-uw-dpS">
+                                <rect key="frame" x="0.0" y="10.5" width="195" height="19.5"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="item title">
+                                        <attributes>
+                                            <font key="NSFont" size="16" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="Czn-54-xwJ" firstAttribute="leading" secondItem="mOl-BX-cYo" secondAttribute="trailing" multiplier="0.65" constant="10" id="Jli-C8-0jV"/>
+                            <constraint firstItem="Czn-54-xwJ" firstAttribute="centerY" secondItem="luq-uw-dpS" secondAttribute="centerY" id="LJ8-8a-GgG"/>
+                            <constraint firstItem="luq-uw-dpS" firstAttribute="top" secondItem="mOl-BX-cYo" secondAttribute="top" constant="10" id="Yag-gh-hWk"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="luq-uw-dpS" secondAttribute="bottom" constant="10" id="YeL-Ir-wpj"/>
+                            <constraint firstAttribute="trailing" secondItem="Czn-54-xwJ" secondAttribute="trailing" id="bk3-HX-TQK"/>
+                            <constraint firstItem="luq-uw-dpS" firstAttribute="trailing" secondItem="mOl-BX-cYo" secondAttribute="trailing" multiplier="0.65" id="e2r-V6-OCk"/>
+                            <constraint firstItem="luq-uw-dpS" firstAttribute="leading" secondItem="mOl-BX-cYo" secondAttribute="leading" id="tuw-gz-WCQ"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-1024.png" translatesAutoresizingMaskIntoConstraints="NO" id="uDC-fK-Wlo">
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="276.5"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="mOl-BX-cYo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="G2j-r0-C6C"/>
+                <constraint firstItem="uDC-fK-Wlo" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JeH-ZP-zzQ"/>
+                <constraint firstItem="uDC-fK-Wlo" firstAttribute="bottom" secondItem="ZTg-uK-7eu" secondAttribute="bottom" multiplier="0.65" id="Jov-Wr-M9a"/>
+                <constraint firstItem="mOl-BX-cYo" firstAttribute="top" secondItem="uDC-fK-Wlo" secondAttribute="bottom" id="QEg-a4-bTp"/>
+                <constraint firstAttribute="trailing" secondItem="uDC-fK-Wlo" secondAttribute="trailing" id="fh9-ja-sEP"/>
+                <constraint firstItem="uDC-fK-Wlo" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kYL-vB-WYK"/>
+                <constraint firstAttribute="bottom" secondItem="mOl-BX-cYo" secondAttribute="bottom" id="rns-eF-1x8"/>
+                <constraint firstAttribute="trailing" secondItem="mOl-BX-cYo" secondAttribute="trailing" id="zsT-CG-x87"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="imageView" destination="uDC-fK-Wlo" id="B3d-Wl-NmZ"/>
+                <outlet property="labelPriceDeal" destination="32g-lC-uiA" id="5IX-1a-Z1m"/>
+                <outlet property="labelPriceOriginal" destination="zvz-CZ-jXs" id="OLH-lU-utp"/>
+                <outlet property="labelTitle" destination="luq-uw-dpS" id="Ya3-9t-O6Q"/>
+            </connections>
+            <point key="canvasLocation" x="34" y="53.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Icon-1024.png" width="1024" height="1024"/>
+    </resources>
+</document>
