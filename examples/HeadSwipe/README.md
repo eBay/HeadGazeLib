@@ -1,7 +1,7 @@
 # HeadSwipe
 
 <p align="center" style="width:200px;">
-  <img src="https://github.corp.ebay.com/jinnxie/HeadGazeLib/blob/master/examples/HeadSwipe/logo.png"  alt="HeadSwipe" title="HeadSwipe">
+  <img src="https://github.com/eBay/HeadGazeLib/blob/master/examples/HeadSwipe/logo.png"  alt="HeadSwipe" title="HeadSwipe">
 </p>
 
 ![Platform iOS](https://img.shields.io/badge/platform-iOS-orange.svg)
