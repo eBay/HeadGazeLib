@@ -1,4 +1,4 @@
-![](https://github.corp.ebay.com/jinnxie/HeadGazeLib/blob/master/examples/demo/demo/video/teaser.gif)  
+![](https://github.com/eBay/HeadGazeLib/blob/master/examples/demo/demo/video/teaser.gif)  
 
 
 This simple demo gives you a jump start on how to use "HeadGazeLib" classes in your project.  
