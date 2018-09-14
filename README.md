@@ -41,7 +41,11 @@ class MyViewController: UIHeadGazeViewController{
     
     // add head gaze recognizer to handle head gaze event
     self.headGazeRecognizer = UIHeadGazeRecognizer()
+    
+    //Between [0,9]. Stablize the cursor reducing the wiggling noise.
+    //The higher the value the more smoothly the cursor moves.
     super.virtualCursorView?.smoothness = 9
+    
     super.virtualCursorView?.addGestureRecognizer(headGazeRecognizer)
     self.headGazeRecognizer?.move = { [weak self] gaze in
 
