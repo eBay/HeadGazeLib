@@ -3,7 +3,11 @@
 ![Platform iOS](https://img.shields.io/badge/platform-iOS-orange.svg)
 ![license MIT](https://img.shields.io/badge/license-MIT-brightgreen.svg)
 ## What is the Project
-`HeadGazeLib` is a pure Swift library to empower iOS app control through head gaze without a finger touch.
+`HeadGazeLib` is a pure Swift library to empower iOS app control through head gaze without a finger touch.  
+See the story behind it [here](https://www.ebayinc.com/stories/news/ebay-open-sources-technology-that-uses-head-motion-to-navigate-user-interface-on-iphone-x/)
+
+![](https://github.com/ebay/HeadGazeLib/blob/master/examples/demo/demo/video/teaser.gif)  
+The above teaser is available at [example/demo](https://github.com/ebay/HeadGazeLib/tree/master/examples/demo).
 
 ## Who May Wish to Use the Project
 Any iOS developer who would like to introduce head-based control to their app. Ideal for accessibility and game control.
@@ -21,7 +25,7 @@ class MyViewController: UIHeadGazeViewController{
 ```
 3. Similarily, change the button class from `UIButton` to `UIHoverableButton` or `UIBubbleButton` in the identity inspector of storyboard
 
-4. Define head gaze event handler through `UIHeadGazeRecognizer` instance in `MyViewController` class
+4. Define head gaze even handler through `UIHeadGazeRecognizer` instance in `MyViewController` class
 ```swift
 class MyViewController: UIHeadGazeViewController{
 //.....
@@ -32,6 +36,9 @@ class MyViewController: UIHeadGazeViewController{
     setupGestureRecognizer()
   }
   private func setupGestureRecognizer() {
+    // set button dwell duration
+    self.myButton.dwellDuration = 1 // in second
+    
     // add head gaze recognizer to handle head gaze event
     self.headGazeRecognizer = UIHeadGazeRecognizer()
     super.virtualCursorView?.smoothness = 9
@@ -44,15 +51,21 @@ class MyViewController: UIHeadGazeViewController{
   }
   private func buttonAction(button: UIButton, gaze: UIHeadGaze){
     guard let button = button as? UIHoverableButton else { return }
-    button.hover(gaze: gaze)
+    // The button instance would trigger TouchUpInside event after user specified seconds
+    button.hover(gaze: gaze) 
+  }
+  
+  @IBAction func myBtnTouchUpInside(_ sender: UIBubbleButton) {
+     print("Button click by head gaze.")
   }
 //....
 }
 ```
 
-For working demo, we have prepared two examples:
-1. HeadSwipe: Swipe daily deal on eBay with head control  
-2. Sensitivity: Head control sensitivity analysis app is used to track the location and timestamp of the cursor as user is "clicking" the button. Useful for user study.  
+For working demo, we have prepared three examples:
+1. demo: A simple jump start example showing how to empower a regular iOS app with head control with minimum code change.  
+2. HeadSwipe: A more serious example - swipe daily deal on eBay with head control  
+3. Sensitivity: An example on how to use `UIMultiFuncButton` to track the location and timestamp of the cursor as user is "clicking" the button. Useful for sensitivity analysis.  
 
 ## License
 Copyright 2018 eBay Inc.  

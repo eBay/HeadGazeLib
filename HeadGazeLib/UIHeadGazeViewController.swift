@@ -10,7 +10,7 @@ import ARKit
 
 class UIHeadGazeViewController: UIHeadGazeViewControllerBase, ARSessionDelegate {
  
-    private var sceneview: ARSCNView?
+    internal var sceneview: ARSCNView?
     /**
      An instance of UIVirtualCursorView that is responsible for visualizing the gaze location on the screen with a cursor/cross-hair.
     */
