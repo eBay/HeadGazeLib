@@ -25,7 +25,7 @@ class MyViewController: UIHeadGazeViewController{
 ```
 3. Similarily, change the button class from `UIButton` to `UIHoverableButton` or `UIBubbleButton` in the identity inspector of storyboard
 
-4. Define head gaze even handler through `UIHeadGazeRecognizer` instance in `MyViewController` class
+4. Define head gaze event handler through `UIHeadGazeRecognizer` instance in `MyViewController` class
 ```swift
 class MyViewController: UIHeadGazeViewController{
 //.....
@@ -56,7 +56,7 @@ class MyViewController: UIHeadGazeViewController{
   }
   
   @IBAction func myBtnTouchUpInside(_ sender: UIBubbleButton) {
-     print("Button click by head gaze.")
+     print("Button clicked by head gaze.")
   }
 //....
 }
