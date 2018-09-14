@@ -32,9 +32,16 @@ class MyViewController: UIHeadGazeViewController{
     setupGestureRecognizer()
   }
   private func setupGestureRecognizer() {
+    // set button dwell duration
+    self.myButton.dwellDuration = 1 // in second
+    
     // add head gaze recognizer to handle head gaze event
     self.headGazeRecognizer = UIHeadGazeRecognizer()
+    
+    //Between [0,9]. Stablize the cursor reducing the wiggling noise.
+    //The higher the value the more smoothly the cursor moves.
     super.virtualCursorView?.smoothness = 9
+    
     super.virtualCursorView?.addGestureRecognizer(headGazeRecognizer)
     self.headGazeRecognizer?.move = { [weak self] gaze in
 
@@ -44,7 +51,12 @@ class MyViewController: UIHeadGazeViewController{
   }
   private func buttonAction(button: UIButton, gaze: UIHeadGaze){
     guard let button = button as? UIHoverableButton else { return }
-    button.hover(gaze: gaze)
+    // The button instance would trigger TouchUpInside event after user specified seconds
+    button.hover(gaze: gaze) 
+  }
+  
+  @IBAction func myBtnTouchUpInside(_ sender: UIBubbleButton) {
+     print("Button clicked by head gaze.")
   }
 //....
 }
