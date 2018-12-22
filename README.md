@@ -71,6 +71,22 @@ For working demo, we have prepared three examples:
 2. HeadSwipe: A more serious example - swipe daily deal on eBay with head control  
 3. Sensitivity: An example on how to use `UIMultiFuncButton` to track the location and timestamp of the cursor as user is "clicking" the button. Useful for sensitivity analysis.  
 
+## Citation
+
+If you find this work useful in your research, please consider citing:
+
+Cicek, Muratcan, Jinrong Xie, Qiaosong Wang, and Robinson Piramuthu. "Mobile Head Tracking for eCommerce and Beyond." arXiv preprint [arXiv:1812.07143 (2018)](http://arxiv.org/abs/1812.07143).
+
+BibTeX entry:
+```
+@article{cicek2018mobile,
+  title={Mobile Head Tracking for eCommerce and Beyond},
+  author={Cicek, Muratcan and Xie, Jinrong and Wang, Qiaosong and Piramuthu, Robinson},
+  journal={arXiv preprint arXiv:1812.07143},
+  year={2018}
+}
+```
+
 ## License
 Copyright 2018 eBay Inc.  
 HeadGazeLib is available under the MIT license. See the LICENSE file for more info.
