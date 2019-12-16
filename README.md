@@ -92,4 +92,4 @@ Copyright 2018 eBay Inc.
 HeadGazeLib is available under the MIT license. See the LICENSE file for more info.
 
 ## Developers
-[Jinrong Xie](http://jinrongxie.net/), [Muratcan Cicek](https://users.soe.ucsc.edu/~cicekm/), Robinson Piramuthu
+[Jinrong Xie](http://jinrongxie.net/), [Muratcan Cicek](https://users.soe.ucsc.edu/~cicekm/), [Qiaosong Wang](https://github.com/qiaosongwang), [Robinson Piramuthu](https://github.com/rpiramuthu)
